@@ -1165,7 +1165,7 @@ contexts:
     - match: (shape\()
       push:
         - meta_scope: storage.type.shape.php
-        - match: ((,|\.\.\.)?\s*\))
+        - match: ((,|\.\.\.)?\s*)\)
           captures:
             1: keyword.operator.key.php
           pop: true
